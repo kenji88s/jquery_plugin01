@@ -16,9 +16,9 @@
 | readIntervalTime | 60 | ページ遷移時にモーダル（〇分毎に）を選択した場合、再度出現させたいときの分数 |
 | readCount | 6 | ページ遷移時にモーダル（〇回毎に）を選択した場合、再度出現させたいときの回数 |
 | playAuto | true | ローディング完了後の自動再生<br>値：true ／ false |
-| loading | none | ローディングアニメーションがコード（html,svg）もしくはアニメーションGIF<br>値：none（無し） ／ code（コード） ／ image（アニメーションGIF） |
+| loading | none | ローディングアニメーションがコード（html、svg）もしくはアニメーションGIF<br>値：none（無し） ／ code（コード） ／ image（アニメーションGIF） |
 | loadingSrc | ymodal/xml/ymodal-figure.xml | 画像もしくはHTMLのパス |
-| loadingSelector | .self-building-square-spinner .square | ローディングアニメーションがhtml,svgのときのセレクタ。ローディング完了後にアニメーションをストップ |
+| loadingSelector | .self-building-square-spinner .square | ローディングアニメーションがhtml、svgのときのセレクタ。ローディング完了後にアニメーションをストップ |
 | loadingImage | none | ローディングアニメーション時に動画の上に画像を表示<br>値：none（無し）／ attr（src属性）／ property（下のloadingImageSrc） |
 | loadingImageSrc |  | ローディングアニメーション時に動画の上の画像のパス |
 | thumbArrow | true | サムネイルの上の矢印<br>値：true ／ false |
@@ -42,8 +42,8 @@
 ## コード設置 例
 ```end.cmd
 <head>
-<link rel="stylesheet" href="ymodal/css/ymodal.css">
-<link rel="stylesheet" href="ymodal/css/ymodal-loading.css">
+<link rel="stylesheet" href="css/ymodal.css">
+<link rel="stylesheet" href="css/ymodal-loading.css">
 /* ↑ ▲▲▲ <head>内に外部CSSファイル名を記載 ▲▲▲ */
 </head>
 
@@ -53,7 +53,7 @@
 /* ↑ ▲▲▲ data-modal-urlに対象のYouTube動画のURLを記載 ▲▲▲ */
 ...
 
-<script src="ymodal/ymodal.js"></script>
+<script src="ymodal.js"></script>
 <script>
 $(function () {
    $('.test1').ymodal({
